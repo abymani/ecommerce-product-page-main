@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+
+:root{
+    /* ### Primary */
+    
+    --Orange: hsl(26, 100%, 55%);
+    --Pale-orange: hsl(25, 100%, 94%);
+    
+    /* ### Neutral */
+    
+    --Very-vark-blue: hsl(220, 13%, 13%);
+    --Dark-grayish-blue: hsl(219, 9%, 45%);
+    --Grayish-blue: hsl(220, 14%, 75%);
+    --Light-grayish-blue: hsl(223, 64%, 98%);
+    --White: hsl(0, 0%, 100%);
+    /*black (with 75% opacity for lightbox background) */
+    --Black : hsl(0, 0%, 0%);
+    
+    /* ## Typography
+    
+    ### Body Copy */
+    
+    --fs-para: 16px;
+    --ff-kumbh-sans: 'Kumbh Sans', sans-serif;
+    --fw-regular:400;
+    --fw-bold:700;
+
+    --num-of-items:0;
+}
+
+* {
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: var(--ff-kumbh-sans);
+}
+p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+h1,h2,h3,h4 {
+    font-weight: 700;
+}
+main {
+    margin-bottom: 5rem;
+}
+.content-container {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+    .subheading {
+        color: var(--Orange);
+        font-weight: 700;
+        letter-spacing: 1px;
+    }
+    .heading {
+        color:var(--Very-vark-blue);
+        font-size: 1.5rem;
+    }
+
+    .desc {
+        color: var(--Dark-grayish-blue);
+        font-size: 1rem;
+    }
+    .price-container {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+        .price {
+            font-size: 1.5rem;
+            font-weight: var(--fw-bold);
+        }
+        .discount {
+            padding: 0.4rem;
+            font-size: 0.75rem !important;
+            color: var(--Orange);
+            font-weight: var(--fw-bold);
+            border-radius: 10px;
+            background-color: var(--Pale-orange);
+        }
+        .actual-price {
+            margin-left: auto;
+            text-decoration: line-through;
+            color: var(--Grayish-blue);
+        }
+    .num-of-items-container{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+        background-color: var(--Light-grayish-blue);
+        border-radius: 10px;
+        margin-bottom:1rem;
+    }
+        .minus-item,.plus-item {
+            cursor: pointer;
+        }
+    .add-to-cart-btn {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        border: 0px;
+        width: 100%;
+        padding: 1rem;
+        border-radius: 10px;
+        color: var(--White);
+        background-color: var(--Orange);
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    .add-to-cart-btn:hover {
+        opacity: 0.8;
+    }
+
+@media screen and (min-width:500px) {
+    main {
+        display: flex;
+        gap: 5vw;
+        margin: 5vw 15vw;
+    }
+    .content-container {
+        padding-top: 5rem;
+    }
+    .cart-btns {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+        .add-to-cart-btn {
+            padding: 1rem;
+            height: 3rem;
+
+        }
+}
