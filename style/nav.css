@@ -116,7 +116,7 @@
             border-bottom: 1px solid hsl(220, 14%, 75%,0.5);
         }
         .empty-cart {
-            display: none;
+            display: block;
             margin-top: 3vw;
             text-align: center;
             color: hsl(219, 9%, 45%);
@@ -125,6 +125,7 @@
             width: 40px;
         }
         .cart-items {
+            display: none;
             padding-block: 1rem;
         }
         .cart-item {
