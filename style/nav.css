@@ -185,10 +185,17 @@
     }
 
 @media screen and (max-width:500px) {
+
     .cart-menu[data-cart-visibilty="true"] {
-        width: 90vw;
-        right:-5rem;
+        width: 90vw; 
+         right:-5rem;
         /* left: -65vw; */
+    }
+
+}
+@media screen and (max-width:800px) {
+    .cart-menu[data-cart-visibilty="true"] {
+
     }
     /* mobile navigation */
     body[data-nav-menu="true"] {

@@ -119,3 +119,14 @@ addCart.addEventListener('click', () => {
     numOfItems.innerHTML = items;
   }
 });
+
+const deleteItem = document.querySelector(".delete-icon");
+
+deleteItem.addEventListener('click',()=>{
+    items = 0;
+    root.style.setProperty("--num-of-items",`${items}`);
+    prevItems =items;
+
+    emptyCart.style.display = "block";
+    cart.style.display = "none";
+});

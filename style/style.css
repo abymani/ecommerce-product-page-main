@@ -118,10 +118,17 @@ main {
     }
 
 @media screen and (min-width:500px) {
+    
     main {
-        display: flex;
         gap: 5vw;
         margin: 5vw 15vw;
+    }
+}
+@media screen and (min-width:800px) {
+    main {
+        display: flex;
+        /* gap: 5vw;
+        margin: 5vw 15vw; */
     }
     .content-container {
         padding-top: 5rem;

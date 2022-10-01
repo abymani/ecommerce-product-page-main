@@ -79,9 +79,16 @@ img {vertical-align: middle; max-width: 100%;}
   border: 0px;
   overflow: hidden;
 }
-@media screen and (min-width:500px) {
+@media screen and (min-width:500px) and (max-width:800px) {
   .img-thumb {
     display: inline-block;
+    width: 10vw;
+  }
+}
+@media screen and (min-width:800px)  {
+  .img-thumb {
+    display: inline-block;
+    width: 6vw;
   }
 }
 
